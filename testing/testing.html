@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .book{
+            perspective: 800px;
+            transform-style: preserve-3d;
+        }
+        .page{
+            position: absolute;
+            background-color: aqua;
+            width: 400px;
+            height: 500px;
+        }
+        .page6{
+            transform: rotateX(0deg);
+            transition-duration: 4s; 
+            transform-origin: right;  
+        }
+        .book:hover .page6{
+            transform: rotateY(180deg);
+        }
+        .page5{
+            transform: rotateX(0deg);
+            transition-duration: 4s; 
+            transform-origin: right;  
+            transition-delay: 6s;
+        }
+        .book:hover .page5{
+            transform: rotateY(180deg);
+        }
+        .page4{
+            transform: rotateX(0deg);
+            transition-duration: 4s; 
+            transform-origin: right;
+            transition-delay: 8s;  
+        }
+        .book:hover .page4{
+            transform: rotateY(180deg);
+        }
+        .page3{
+            transform: rotateX(0deg);
+            transition-duration: 4s; 
+            transform-origin: right;
+            transition-delay: 10s;  
+        }
+        .book:hover .page3{
+            transform: rotateY(180deg);
+        }
+        .page2{
+            transform: rotateX(0deg);
+            transition-duration: 4s; 
+            transform-origin: right;
+            transition-delay: 6s;  
+        }
+        .book:hover .page2{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+       <div class="book">
+           <div class="page page1">page1</div>
+           <div class="page page2">page2</div>
+           <div class="page page3">page3</div>
+           <div class="page page4">page4</div>
+           <div class="page page5">page5</div>
+           <div class="page page6">page6</div>
+       </div>
+    </div>
+</body>
+</html>

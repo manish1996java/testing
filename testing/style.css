@@ -1,0 +1,126 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+}
+
+#phone-box {
+  height: 110vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+}
+
+.phone-container {
+  position: relative;
+  width: 320px;
+  height: 500px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  -webkit-transform: rotateY(0deg) rotateX(0deg);
+          transform: rotateY(0deg) rotateX(0deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.phone-container:hover {
+  -webkit-transform: rotateY(75deg) rotateX(40deg);
+          transform: rotateY(75deg) rotateX(40deg);
+}
+
+.layer {
+  position: absolute;
+  border-radius: 10px;
+  width: inherit;
+  height: inherit;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.layer-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateZ(10px);
+          transform: translateZ(10px);
+}
+
+.layer-2 {
+  background-image: url(./iphone-transparent.png);
+  background-position: -157px -4px;
+  background-repeat: no-repeat;
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
+}
+
+.layer-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateZ(30px);
+          transform: translateZ(30px);
+}
+
+.layer-3 img {
+  width: 50px;
+}
+
+.layer-3 p {
+  padding: 10px 0px;
+}
+
+.back {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(lightblue), to(#eee390));
+  background-image: linear-gradient(to bottom, lightblue, #eee390);
+  border-radius: 18px;
+  width: 65%;
+  height: 85%;
+}
+
+.phone-container:hover .layer-1 {
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
+}
+
+.phone-container:hover .layer-2 {
+  -webkit-transform: translateZ(60px);
+          transform: translateZ(60px);
+}
+
+.phone-container:hover .layer-3 {
+  -webkit-transform: translateZ(80px);
+          transform: translateZ(80px);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,80 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+}
+@mixin contbox-sadow{
+    box-sadow:30px 12px 84px -8px #636161;
+}
+#phone-box{
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.phone-container{
+    position: relative;
+    width: 320px;
+    height: 500px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    transform: rotateY(0deg) rotateX(0deg);
+    transition: 1s ;
+    &:hover{
+        transform: rotateY(75deg) rotateX(40deg);
+    }
+}
+.layer{
+    position: absolute;
+    border-radius: 10px;
+    width: inherit;
+    height: inherit;
+    transition: 1s;
+    transition-delay: 0.5s;
+    
+}
+.layer-1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(10px);
+    // background-color: lightpink;  
+}
+.layer-2{
+    background-image: url(./iphone-transparent.png);
+    background-position: -157px -4px;
+    background-repeat: no-repeat;
+    transform:translateZ(20px);
+}
+.layer-3{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    transform: translateZ(30px);
+    img{
+        width: 50px;
+    }
+    p{
+        padding: 10px 0px;
+    }
+}
+.back{
+    background-image: linear-gradient(to bottom ,lightblue,rgb(238, 227, 144));
+    border-radius: 18px;
+    width: 65%;
+    height: 85%;
+}
+.phone-container:hover .layer-1{
+    transform: translateZ(20px);
+}
+.phone-container:hover .layer-2{
+    transform: translateZ(60px);
+}
+.phone-container:hover .layer-3{
+    transform: translateZ(80px);
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .container{
+            height: 400px;
+            background-image: linear-gradient(to right,darkorange,#DB385E);
+            
+        }
+        .innercontainer{
+            background: black;
+            height: 335px;
+            border-bottom-right-radius: 150px;
+        }
+        .row{
+            display: flex;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        .txt{
+            display: inline-block;
+        }
+        .profile{
+            overflow: hidden;
+            width: 100px;
+            height: 100px;
+            border: 10px solid transparent;
+            border-color: transparent white white transparent;
+            transform: rotateZ(42deg);  
+            border-radius: 50%;
+        }
+        .profile img{
+            width: 100%;
+            transform: rotateZ(-42deg) scale(1.2,1.2); 
+    
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="innercontainer">
+            <div class="profile">
+                <img src="https://images.vexels.com/media/users/3/145908/preview2/52eabf633ca6414e60a7677b0b917d92-male-avatar-maker.jpg" alt="">
+            </div>
+        </div>
+        <div class="text">
+            <div class="row" style="justify-content:space-between">
+                <div class="txt left">Ship custom today with keen.io.</div>
+                <div class="txt right">Share twitter facebook</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

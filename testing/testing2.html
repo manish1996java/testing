@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #container{
+        
+    }
+    #box{
+        margin: 0 auto;
+        /* background-color: papayawhip; */
+        width: 20rem;
+        height: 20rem;
+        transform: rotateY(-55deg) rotateX(-14deg);
+        transform-style: preserve-3d;
+        animation: mycube infinite linear 10s;
+    }
+
+    @keyframes mycube{
+        from{
+            transform: rotate3d(0,0,0,360deg);
+        }
+        to{
+            transform: rotate3d(1,1,1,360deg);
+        }
+    } 
+    .sides{
+        opacity: 0.5;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .back{
+        background-color: blueviolet;
+        transform: translateZ(-319px);
+    }
+    .top{
+        background-color: lightgreen;
+        transform: rotateX(-90deg);
+        transform-origin: top;
+    }
+    .right{
+        background-color: lightcoral;
+        transform: rotateY(-90deg);
+        transform-origin: right;
+    }
+    .left{
+        background-color: lightcoral;
+        transform: rotateY(+90deg);
+        transform-origin: left;
+    }
+    .bottom{
+        background-color: lightskyblue;
+        transform: rotateX(90deg);
+        transform-origin: bottom;
+    }
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: 
+    
+
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box">
+            <div class="sides front"> front</div>
+            <div class="sides back">back</div>
+            <div class="sides right">right</div>
+            <div class="sides left">left</div>
+            <div class="sides bottom">bottom</div>
+            <div class="sides top">top</div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .outerContainer{
+            background-image: linear-gradient(to bottom right,orange,lightyellow);
+            width: 100%;
+        }
+        .container{
+            margin: 0 auto;
+            border: 1px solid black;
+            width: 700px;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+        }
+        .buttonPlate{
+            
+            margin: 0 auto;
+            background-color:rgb(46, 44, 67);
+            height: 150px;
+            width: 100%;   
+            border-radius: 10px 10px 10px 10px;
+            transform:  rotateY(-56deg) rotateX(21deg) rotateZ(0deg);
+            transform-origin: bottom;
+            transition: 1s;
+            box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.379);
+        }
+        .buttonPlate:hover{
+    
+            transform:  rotateY(-35deg) rotateX(6deg) rotateZ(0deg);
+        }
+        .innerContainer{
+            transform-style: preserve-3d;
+            transform: translateX(-30px);
+            padding-top: 50px;
+            padding-left: 40px;
+            transition-duration: 1s;
+        }
+        .buttonPlate:hover .innerContainer{
+
+            transform: translateX(0px);
+        }
+        button{  
+            cursor: pointer;         
+            border: none;
+            width: 200px;
+            height: 40px;
+            border-radius: 10%;
+        }
+        .red{
+            background-color: lightcoral;
+        }
+        .yellow{
+            background-color: lightgoldenrodyellow;
+        }
+        .green{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="outerContainer">
+        <div class="container">
+
+            <div class="buttonPlate">
+                <div class="innerContainer">
+                    <button class="red">hey</button>
+                    <button class="yellow">hello</button>
+                    <button class="green">bey</button>
+                </div>
+            </div>
+            <div class="buttonPlate">
+                    <div class="innerContainer">
+                        <button class="red">hey</button>
+                        <button class="yellow">hello</button>
+                        <button class="green">bey</button>
+                    </div>
+            </div>
+            <div class="buttonPlate">
+                    <div class="innerContainer">
+                        <button class="red">hey</button>
+                        <button class="yellow">hello</button>
+                        <button class="green">bey</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

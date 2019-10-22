@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var id;
+        var password;
+    window.addEventListener('load',bindEvent);
+    function bindEvent(){
+        var subbtn = document.getElementById("sbtn");
+        subbtn.addEventListener("click",savelocally);
+    }
+    
+    function savelocally(){
+        console.log("it works");
+        var id = document.querySelector("#userid");
+        var password = document.querySelector("#password");
+        var creden = {userid:id,userpass:password};
+        consle.log("creden");
+    }
+    </script>
+</head>
+<body>
+    <form action="" id="myform">
+        <label for="">id</label>
+        <input type="text" id="userid">
+        <label for="">password</label>
+        <input type="password" id="password">
+        <button type="submit" >submit</button>
+        <button id="sbtn">second</button>
+    </form>
+</body>
+</html>
